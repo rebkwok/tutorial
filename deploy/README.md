@@ -181,7 +181,7 @@ We can now visit the app in our browser with `heroku open`.
 
 This will open a url like [https://djangogirlsblog.herokuapp.com/]() in your browser, and at the moment you will probably see an error page. Since we only created the admin view for the app so far, add `admin/` to the url (e.g. [https://djangogirlsblog.herokuapp.com/admin/]()) to see a working page of our web app.
 
-The error you saw was because we when we deployed to Heroku, we created a new database and it's empty.  We need to run the  ```migrate``` command like we did when we first started our project to set our database up properly:
+The error you saw was because when we deployed to Heroku, we created a new database and it's empty.  We need to run the  ```migrate``` command like we did when we first started our project to set our database up properly:
 
     $ heroku run python manage.py migrate
 
